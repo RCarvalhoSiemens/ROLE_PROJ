@@ -1,0 +1,38 @@
+{
+    "role": {
+        "name": "DB_SECURITY_ADMIN",
+        "object_privileges": [
+            {
+                "name": "sys.password_exclude_list",
+                "type": "TABLE",
+                "privileges": [
+                    "SELECT",
+                    "INSERT",
+                    "UPDATE",
+                    "DELETE"
+                ]
+            },
+            {
+                "name": "sys.get_insufficient_privilege_error_details",
+                "type": "PROCEDURE",
+                "privileges": [
+                    "EXECUTE"
+                ]
+            }
+        ],
+        "schema_roles": [
+            {
+                "names": [
+                    "SELECT__SYS_STATISTICS"
+                ]
+            }
+        ],
+        "system_privileges": [
+            "CATALOG READ",
+            "TRACE ADMIN",
+            "INIFILE ADMIN",
+            "AUDIT ADMIN",
+            "AUDIT OPERATOR"
+        ]
+    }
+}
